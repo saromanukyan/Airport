@@ -103,7 +103,7 @@ public class Plane {
         else this.cost = cost;
     }
     public void printInfo(){
-        System.out.println("-------------------");
+        System.out.println("--------------------------");
         System.out.printf ("Model:       %s%n", getModel());
         System.out.printf ("Country:     %s%n", getCountry());
         System.out.println("Year:        "+(getYear()==0?"unknown":getYear()));
