@@ -43,14 +43,13 @@ public class PlaneService {
         plane.setYear(year);
         plane.setHours(hours);
         plane.setMilitary(isMilitary);
+        plane.setWeight(weight);
         plane.setTopSpeed(speed);
         plane.setSeats(seats);
         plane.setCost(cost);
         return plane;
     }
 
-    //Parameter one Plane
-    //Result: print cost and topSpeed if the plane is military otherwise print model and country
     public void printCostAndSpeedOrModelAndCountry(Plane plane) {
         System.out.println(plane.isMilitary() ? (plane.getCost() + " " + plane.getTopSpeed()) :
                 (plane.getModel() + plane.getCountry()));
@@ -69,7 +68,7 @@ public class PlaneService {
     }
 
     public void allNotMiliraryPlanes(Plane[] planes) {
-        int index = 1;
+
         for (Plane plane : planes) {
             if (!plane.isMilitary()) plane.printInfo();
         }
